@@ -21,18 +21,21 @@ void main () {
     unsigned long int variavel3;
     printf("u Short int: %u \n", variavel1);
     printf("u Int: %u \n", variavel2);
-    printf("u Long Int: %lu \n", variavel3);
+    printf("u Long Int: %lu \n", variavel3); //usa lu
 
     // numeros reais
-    float nome_da_variavel5 = 3.9f;
+    float nome_da_variavel5 = 3.9f; // colocar f no final, pra nao interp como double
     double nome_da_variavel6 = 3.4;
     long double nome_da_variavel7 = 3.9e-23L;
     printf("Float: %f \n", nome_da_variavel5);
     printf("Double: %f \n", nome_da_variavel6);
-    printf("Long Double: %e \n", nome_da_variavel7); // %e de notação científica, p/ long double
-
+    printf("Long Double: %e \n", nome_da_variavel7); // %e de notação científica, p/ long double. usa %le
 
     //constante nomeada
     const int max = 100;
     printf("Constante int: %i", max);
+
+    // impressão de endereços da memoria
+    int a;
+    printf("endereço da variavel a: %p",&a);
 }
