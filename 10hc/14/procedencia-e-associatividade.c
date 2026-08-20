@@ -5,7 +5,7 @@ void main () {
 
     // atribuição procedencia a direita
     d = 5;
-    a = b = c =d;
+    a = b = c = d;
 
     // operadores unarios procedencia a direita 
     a = -!10;
