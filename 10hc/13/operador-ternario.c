@@ -1,10 +1,17 @@
 #include <stdio.h>
 
 void main () {
-    int x, y, maior;
+    int x, y, maior, menor;
     printf("Digite dois numeros inteiros: ");
-    scanf(" %d %d", &x, &y); // primeiro valor digitado é atribuido ao x, o segundo é atribuido ao y. & = endereço 
-    maior = x > y ? x : y; // executando o ternário, a primeira condição executada é de condição x . y)
-    // se é verdadeiro retorna x, se for falso, retorna y. O valor que será atribuído ao maior, retorna no printf
-    printf("Maior: %d", maior); // o valor retornado é atribuido ao maior, no caso dependendo do que digitar.
+    scanf(" %d %d", &x, &y); 
+
+    // maior = x > y ? x : y;
+    if (x > y) {
+        maior = x;
+        printf(""); // se voce tiver um print, alme de uma condição
+        maior = y;
+        menor = x;  // se tiver duas condições que vao para redundancia.
+    }               // o operador ternário n~çao consegue te entregar o resultado esperado.
+
+    printf("Maior: %d", maior);
 }
