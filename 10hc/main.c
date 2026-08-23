@@ -1,22 +1,23 @@
+
+
 #include <stdio.h>
 
-// verifica se um numero digitado eh impar ou par
-// e pergunta ao usuario se gostaria de digitar mais um numero
+// criar um programa que imprime de 1 até 10
 
-void main()
-{
-    int entrada, verifica;
-    do
-    {
-        printf("\nDigite um numero inteiro: \n");
-        scanf(" %d", &entrada);
-        if (entrada % 2 == 0)
-            printf("O numero eh par\n");
-        else
-            printf("O numero eh impar\n");
-        printf("\nGostaria de digitar um novo numero?\n"
-               "1 = Inserir novo numero\n"
-               "-1 = Encerrar programa\n");
-        scanf(" %d", &verifica);
-    } while (verifica != -1);
+void main() {
+    int i;
+    for (i = 0; i < 10; i++) {
+        printf("O valor de i e %d\n", i);
+    }
 }
+
+// outra forma do for, é fazendo a declaração da variável dentro do for, no contador. Mas fazendo isso, a variavel nao é valida fora do loop for.
+// se tentar imprimir a variavel fora do loop, da erro, que não existe a variavel.
+
+// void main() {
+//     for (int i = 0; i < 10; i++) {
+//         printf("O valor de i e %d\n", i);
+//     }
+// }
+
+// 

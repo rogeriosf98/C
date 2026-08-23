@@ -1,21 +1,22 @@
 #include <stdio.h>
 
-// criar um programa que verifica se o numero é par ou impar, quando ele for positivo
-// e que interrompe a execução se o numero digitado for negativo
+// verifica se um numero digitado eh impar ou par
+// e pergunta ao usuario se gostaria de digitar mais um numero
 
 void main()
 {
-    int entrada;
+    int entrada, verifica;
     do
     {
-        printf("\nDigite um numero inteiro positivo para ser se eh par ou impar\n"
-               "ou um numero negativo para sair do programa: ");
+        printf("\nDigite um numero inteiro: \n");
         scanf(" %d", &entrada);
-        if (entrada < 0)
-            break;
         if (entrada % 2 == 0)
-            printf("\n%d eh par\n", entrada);
+            printf("O numero eh par\n");
         else
-            printf("\n%d eh impar\n", entrada);
-    } while (1);
+            printf("O numero eh impar\n");
+        printf("\nGostaria de digitar um novo numero?\n"
+               "1 = Inserir novo numero\n"
+               "-1 = Encerrar programa\n");
+        scanf(" %d", &verifica);
+    } while (verifica != -1);
 }
